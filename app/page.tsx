@@ -3,7 +3,6 @@ export default function Home() {
     <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
         * {
           margin: 0;
           padding: 0;
@@ -34,7 +33,7 @@ export default function Home() {
           display: block;
         }
 
-        /* Floating glass header */
+        /* liquid ass(glass) header */
         header {
           position: fixed;
           top: 16px;
@@ -67,18 +66,16 @@ export default function Home() {
 
        .logo {
           position: fixed;
-          top: -120px;
-          left: -120px;
+          top: -5px;
+          left: 20px;
           z-index: 20;
           text-decoration: none;
         }
-
         .logo img {
-          height: 400px;
+          height: 130px;
           width: auto;
         }
 
-        /* Nav links pill */
         nav {
           display: flex;
           align-items: center;
@@ -89,7 +86,6 @@ export default function Home() {
           background: rgba(255, 255, 255, 0.07);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
         }
-
         nav a {
           font-family: 'Orbitron', sans-serif;
           font-size: 10px;
@@ -102,12 +98,10 @@ export default function Home() {
           transition: all 0.25s ease;
           white-space: nowrap;
         }
-
         nav a:hover {
           color: white;
           background: rgba(255, 255, 255, 0.12);
         }
-
         nav a.active {
           color: white;
           background: linear-gradient(
@@ -118,7 +112,7 @@ export default function Home() {
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
 
-        /* CTA button */
+        /* heders buttons to hyper */
         .join-btn {
           font-family: 'Orbitron', sans-serif;
           font-size: 10px;
@@ -144,10 +138,7 @@ export default function Home() {
       <a href="/" className="logo">
           <img src="cosmoslogo.png" alt="Cosmos" />
         </a>
-
       <header>
-       
-
         <nav>
           <a href="/" className="active">Home</a>
           <a href="/about">About</a>
@@ -155,10 +146,8 @@ export default function Home() {
           <a href="/leaderboard">Leaderboard</a>
           <a href="/events">Events</a>
         </nav>
-
-        <a href="/join" className="join-btn">BECOME A MEMBER</a>
+       <a href="/join" className="join-btn">BECOME A MEMBER</a>
       </header>
-
       <div className="spline-container">
         <iframe
           src="https://my.spline.design/thebluemarble-keVOvs2KGeZ0M1B681M26QT7/"
