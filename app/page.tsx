@@ -66,13 +66,13 @@ export default function Home() {
 
        .logo {
           position: fixed;
-          top: -5px;
-          left: 20px;
+          top: -80px;
+          left: -20px;
           z-index: 20;
           text-decoration: none;
         }
         .logo img {
-          height: 130px;
+          height: 270px;
           width: auto;
         }
 
@@ -145,6 +145,7 @@ export default function Home() {
           <a href="/team">Team</a>
           <a href="/leaderboard">Leaderboard</a>
           <a href="/events">Events</a>
+          <a href="/newsletter">Newsletter</a>
         </nav>
        <a href="/join" className="join-btn">BECOME A MEMBER</a>
       </header>
