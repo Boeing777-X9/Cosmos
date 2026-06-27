@@ -43,7 +43,7 @@ export default function MembershipPage() {
     setStatus("submitting");
     setErrorMsg("");
 
-    // ---- Supabase insert (add back when ready) ----
+    // supabase connected adddedby 777-9
     // const { error } = await supabase.from("members").insert([
     //   {
     //     name: form.name,
@@ -282,6 +282,17 @@ export default function MembershipPage() {
             padding: 32px 22px 28px;
           }
         }
+          .logo {
+          position: fixed;
+          top: -80px;
+          left: -20px;
+          z-index: 20;
+          text-decoration: none;
+        }
+        .logo img {
+          height: 270px;
+          width: auto;
+        }
       `}</style>
 
       <div className="spline-container">
@@ -294,6 +305,10 @@ export default function MembershipPage() {
           allow="autoplay; fullscreen; xr-spatial-tracking"
         />
       </div>
+          <a href="/" className="logo">
+        <img src="cosmoslogo.png" alt="Cosmos" />
+      </a>
+
 
       <div className="page-overlay">
         <form className="glass-card" onSubmit={handleSubmit}>
