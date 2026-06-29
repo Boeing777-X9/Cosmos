@@ -1,13 +1,40 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
+const navVariants = {
+  hidden: { opacity: 0, y: -30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: 'easeOut' as const },
+  },
+}
+
+const navItemVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: 0.3 + i * 0.08, duration: 0.4, ease: 'easeOut' as const },
+  }),
+}
+
+const ctaVariants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { delay: 0.9, duration: 0.4, ease: 'easeOut' as const },
+  },
+}
+
 export default function Home() {
   return (
     <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         html, body {
           width: 100%;
@@ -16,37 +43,28 @@ export default function Home() {
           background: #0A1628;
         }
 
-        /* Spline 3D background */
         .spline-container {
           position: fixed;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          height: 100vh;
+          top: 0; left: 0;
+          width: 100vw; height: 100vh;
           z-index: 0;
         }
 
         iframe {
-          width: 100%;
-          height: 100%;
-          border: none;
-          display: block;
+          width: 100%; height: 100%;
+          border: none; display: block;
         }
 
-        /* liquid ass(glass) header */
         header {
           position: fixed;
           top: 16px;
           left: 50%;
           transform: translateX(-50%);
           width: calc(100% - 64px);
-          max-width: 900px;
+          max-width: 1000px;   /* slightly wider for extra links */
           z-index: 10;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding:2px 16px;
-          height: 70px; 
+          padding: 2px 16px;
+          height: 70px;
           border-radius: 24px;
           overflow: hidden;
           border: 1px solid rgba(255, 255, 255, 0.15);
@@ -64,20 +82,18 @@ export default function Home() {
             0 8px 40px rgba(0, 0, 0, 0.4);
         }
 
-       .logo {
+        .logo {
           position: fixed;
-          top: -80px;
-          left: -20px;
+          top: -80px; left: -20px;
           z-index: 20;
           text-decoration: none;
         }
-        .logo img {
-          height: 270px;
-          width: auto;
-        }
+        .logo img { height: 270px; width: auto; }
 
         nav {
           display: flex;
+          width: fit-content;
+          margin: 0 auto;
           align-items: center;
           gap: 2px;
           padding: 4px 6px;
@@ -104,15 +120,10 @@ export default function Home() {
         }
         nav a.active {
           color: white;
-          background: linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.2),
-            rgba(255, 255, 255, 0.08)
-          );
+          background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.08));
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
 
-        /* heders buttons to hyper */
         .join-btn {
           font-family: 'Orbitron', sans-serif;
           font-size: 10px;
@@ -128,27 +139,61 @@ export default function Home() {
           white-space: nowrap;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
           transition: all 0.25s ease;
+          position: absolute;
+          right: 16px;
+          top: 50%;
+          transform: translateY(-50%);
         }
-
         .join-btn:hover {
-          transform: translateY(-1px);
+          transform: translateY(-52%) scale(1.03);
           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
       `}</style>
+
       <a href="/" className="logo">
-          <img src="cosmoslogo.png" alt="Cosmos" />
-        </a>
-      <header>
+        <img src="cosmoslogo.png" alt="Cosmos" />
+      </a>
+
+      <motion.header variants={navVariants} initial="hidden" animate="visible">
         <nav>
-          <a href="/" className="active">Home</a>
-          <a href="/about">About</a>
-          <a href="/team">Team</a>
-          <a href="/leaderboard">Leaderboard</a>
-          <a href="/events">Events</a>
-          <a href="/newsletter">Newsletter</a>
+          {[
+            { label: 'Home',        href: '/' },
+            { label: 'About',       href: '/about' },
+            { label: 'Team',        href: '/team' },
+            { label: 'Leaderboard', href: '/leaderboard' },
+            { label: 'Events',      href: '/events' },
+            { label: 'Newsletter',  href: '/newsletter' },
+            { label: 'Blog',        href: '/blog' },
+          ].map(({ label, href }, i) => (
+            <motion.a
+              key={label}
+              href={href}
+              className={label === 'Home' ? 'active' : ''}
+              variants={navItemVariants}
+              custom={i}
+              initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {label}
+            </motion.a>
+          ))}
         </nav>
-       <a href="/join" className="join-btn">BECOME A MEMBER</a>
-      </header>
+
+        <motion.a
+          href="/join"
+          className="join-btn"
+          variants={ctaVariants}
+          initial="hidden"
+          animate="visible"
+          whileHover={{ scale: 1.05, boxShadow: '0 8px 28px rgba(0,0,0,0.4)' }}
+          whileTap={{ scale: 0.95 }}
+        >
+          BECOME A MEMBER
+        </motion.a>
+      </motion.header>
+
       <div className="spline-container">
         <iframe
           src="https://my.spline.design/thebluemarble-keVOvs2KGeZ0M1B681M26QT7/"
