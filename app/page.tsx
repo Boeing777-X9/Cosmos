@@ -61,25 +61,19 @@ export default function Home() {
           left: 50%;
           transform: translateX(-50%);
           width: calc(100% - 64px);
-          max-width: 1000px;   /* slightly wider for extra links */
+          max-width: 1100px;
           z-index: 10;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
           padding: 2px 16px;
           height: 70px;
           border-radius: 24px;
-          overflow: hidden;
-          border: 1px solid rgba(255, 255, 255, 0.15);
-          background: linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.18) 0%,
-            rgba(255, 255, 255, 0.06) 50%,
-            rgba(120, 180, 255, 0.1) 100%
-          );
+          border: 1px solid rgba(255,255,255,0.15);
+          background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.06) 50%, rgba(120,180,255,0.1));
           backdrop-filter: blur(32px) saturate(200%) brightness(1.1);
           -webkit-backdrop-filter: blur(32px) saturate(200%) brightness(1.1);
-          box-shadow:
-            inset 0 1.5px 0 rgba(255, 255, 255, 0.35),
-            inset 1px 0 0 rgba(255, 255, 255, 0.2),
-            0 8px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 1.5px 0 rgba(255,255,255,0.35), inset 1px 0 0 rgba(255,255,255,0.2), 0 8px 40px rgba(0,0,0,0.4);
         }
 
         .logo {
@@ -92,15 +86,13 @@ export default function Home() {
 
         nav {
           display: flex;
-          width: fit-content;
-          margin: 0 auto;
           align-items: center;
           gap: 2px;
           padding: 4px 6px;
           border-radius: 50px;
-          border: 1px solid rgba(255, 255, 255, 0.12);
-          background: rgba(255, 255, 255, 0.07);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+          border: 1px solid rgba(255,255,255,0.12);
+          background: rgba(255,255,255,0.07);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);
         }
         nav a {
           font-family: 'Orbitron', sans-serif;
@@ -137,16 +129,12 @@ export default function Home() {
           cursor: pointer;
           text-decoration: none;
           white-space: nowrap;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 12px rgba(0,0,0,0.25);
           transition: all 0.25s ease;
-          position: absolute;
-          right: 16px;
-          top: 50%;
-          transform: translateY(-50%);
         }
         .join-btn:hover {
-          transform: translateY(-52%) scale(1.03);
-          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+          transform: translateY(-1px);
+          box-shadow: 0 6px 20px rgba(0,0,0,0.3);
         }
       `}</style>
 
@@ -154,45 +142,18 @@ export default function Home() {
         <img src="cosmoslogo.png" alt="Cosmos" />
       </a>
 
-      <motion.header variants={navVariants} initial="hidden" animate="visible">
+      <header>
         <nav>
-          {[
-            { label: 'Home',        href: '/' },
-            { label: 'About',       href: '/about' },
-            { label: 'Team',        href: '/team' },
-            { label: 'Leaderboard', href: '/leaderboard' },
-            { label: 'Events',      href: '/events' },
-            { label: 'Newsletter',  href: '/newsletter' },
-            { label: 'Blog',        href: '/blog' },
-          ].map(({ label, href }, i) => (
-            <motion.a
-              key={label}
-              href={href}
-              className={label === 'Home' ? 'active' : ''}
-              variants={navItemVariants}
-              custom={i}
-              initial="hidden"
-              animate="visible"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {label}
-            </motion.a>
-          ))}
+          <a href="/" className="active">Home</a>
+          <a href="/about">About</a>
+          <a href="/team">Team</a>
+          {/* <a href="/leaderboard">Leaderboard</a> */}
+          <a href="/events">Events</a>
+          <a href="/newsletter">Newsletter</a>
+          <a href="/blog">Blog</a>
         </nav>
-
-        <motion.a
-          href="/join"
-          className="join-btn"
-          variants={ctaVariants}
-          initial="hidden"
-          animate="visible"
-          whileHover={{ scale: 1.05, boxShadow: '0 8px 28px rgba(0,0,0,0.4)' }}
-          whileTap={{ scale: 0.95 }}
-        >
-          BECOME A MEMBER
-        </motion.a>
-      </motion.header>
+        <a href="/join" className="join-btn">BECOME A MEMBER</a>
+      </header>
 
       <div className="spline-container">
         <iframe

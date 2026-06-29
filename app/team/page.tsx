@@ -533,9 +533,10 @@ export default function TeamPage() {
           <a href="/">Home</a>
           <a href="/about">About</a>
           <a href="/team" className="active">Team</a>
-          <a href="/leaderboard">Leaderboard</a>
+          {/* <a href="/leaderboard">Leaderboard</a> */}
           <a href="/events">Events</a>
           <a href="/newsletter">Newsletter</a>
+          <a href="/blog">Blog</a>
         </nav>
         <a href="/join" className="join-btn">BECOME A MEMBER</a>
       </header>

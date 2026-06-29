@@ -614,12 +614,13 @@ export default function NewsletterPage() {
       {/* Header nav */}
       <header>
         <nav>
-          <a href="/">Home</a>
+         <a href="/">Home</a>
           <a href="/about">About</a>
           <a href="/team">Team</a>
-          <a href="/leaderboard">Leaderboard</a>
+          {/* <a href="/leaderboard">Leaderboard</a> */}
           <a href="/events">Events</a>
           <a href="/newsletter" className="active">Newsletter</a>
+          <a href="/blog">Blog</a>
         </nav>
         <a href="/join" className="join-btn">BECOME A MEMBER</a>
       </header>
