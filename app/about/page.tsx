@@ -98,10 +98,10 @@ const activities = [
 ]
 
 const team = [
-  { role: 'Faculty Advisor', name: 'Dr. A. Sharma', dept: 'Department of Physics' },
-  { role: 'President', name: 'Riya Verma', dept: 'B.Tech CSE' },
-  { role: 'Vice President', name: 'Arjun Singh', dept: 'B.Tech ME' },
-  { role: 'Secretary', name: 'Priya Patel', dept: 'B.Sc. Physics' },
+  { role: 'Faculty Advisor', name: 'Dr. Rashi Nathawat', dept: 'Department of Physics' },
+  { role: 'President', name: 'Saksham Agrawal', dept: 'B.Tech CSE' },
+  { role: 'Vice President', name: 'Aniqa Aziz', dept: 'B.Tech CSE(Cyber Security)' },
+  { role: 'General Secretary', name: 'Ojasvi Gautam', dept: 'B.Tech CSE(Internet of Things)' },
 ]
 
 export default function About() {

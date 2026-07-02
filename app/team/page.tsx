@@ -101,7 +101,7 @@ export default function TeamPage() {
     { name: "Ojasvi Gautam", role: "General Secretary", photo: "/team/ojasvi.jpg", linkedin: "https://www.linkedin.com/in/ojasvi-gautam-789760344", quote:" 'For my part I know nothing with any certainty, but the sight of stars make me dream' ~ Vincent Van Gogh " },
     { name: "Daivik Garg", role: "Treasurer", photo: "/team/daivik.jpeg", linkedin: "https://www.linkedin.com/in/daivik-garg-90163a350", quote:"Managing your finances is not a luxuary for the rich,it is hygiene for everyone" },
     { name: "Saransh Verma", role: "Technical Secretary", photo: "/team/saransh.jpg", linkedin: "https://www.linkedin.com/in/saransh-verma-22b1ba179", github: "https://github.com/Saransh78", quote:"Not chasing perfection—just making the next move better." },
-    { name: "Shriya Desai", role: "Managing Director", photo: "/team/shriya.jpg", linkedin: "#" },
+    { name: "Shriya Desai", role: "Managing Director", photo: "/team/shriya.jpg", linkedin: "https://www.linkedin.com/in/shriya-desai-9a3b74361", github:"https://github.com/astro-quanta", quote:"Always Reaching. Already Enough."},
     { name: "Vasavadatta Vishen", role: "Director of Operations", photo: "/team/vasavadatta.jpg", linkedin: "https://www.linkedin.com/in/vasavadatta-vishen-620b60321", quote:"Music gives a soul to the universe , wings to the mind , flight to the imagination, and life to everything "
      },
     { name: "Gurbani", role: "Creative Director", photo: "/team/gurbani.jpg", linkedin: "https://www.linkedin.com/in/gurbani-47ba87340", quote:"No one can take away the constellations that exist within you"},
