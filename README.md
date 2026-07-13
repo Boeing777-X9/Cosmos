@@ -4,5 +4,5 @@ Cosmos websiterepo
 platinum award winner, 2026
 TO run this locally
 install docker
-then docker compose up
+then docker compose 
 
