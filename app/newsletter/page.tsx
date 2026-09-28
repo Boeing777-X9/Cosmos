@@ -115,17 +115,14 @@ export default function NewsletterPage() {
 
         .logo {
           position: fixed;
-          top: 10px;
-          left: 20px;
+          top: -80px;
+          left: -20px;
           z-index: 20;
-          display: flex;
-          align-items: center;
           text-decoration: none;
         }
         .logo img {
-          height: 64px;
+          height: 270px;
           width: auto;
-          object-fit: contain;
         }
 
         /* Header */

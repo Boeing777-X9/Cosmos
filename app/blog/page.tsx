@@ -52,18 +52,11 @@ export default function Blog() {
 
         .logo {
           position: fixed;
-          top: 10px;
-          left: 20px;
+          top: -80px; left: -20px;
           z-index: 20;
-          display: flex;
-          align-items: center;
           text-decoration: none;
         }
-        .logo img {
-          height: 64px;
-          width: auto;
-          object-fit: contain;
-        }
+        .logo img { height: 270px; width: auto; }
 
         nav {
           display: flex;

@@ -1,7 +1,5 @@
 "use client"
 import { useState } from "react"
-
-// icons - kept inline so we don't pull in a whole icon library for two svgs
 const LinkedInIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
@@ -22,9 +20,6 @@ type Member = {
   github?: string
   quote?: string
 }
-
-// click anywhere on the card to flip it - quote/links live on the back.
-// no "tap to flip" hint on purpose, it's nicer when people just discover it
 function FlipCard({ name, role, photo, linkedin = "", github = "", quote = "" }: Member) {
   const [flipped, setFlipped] = useState(false)
   const hasLinks = linkedin || github
@@ -49,7 +44,6 @@ function FlipCard({ name, role, photo, linkedin = "", github = "", quote = "" }:
             {hasLinks && (
               <div className="card-links">
                 {linkedin && (
-                  // stopPropagation so clicking the icon opens the link instead of flipping the card back
                   <a href={linkedin} className="card-link" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
                     <LinkedInIcon />
                   </a>
@@ -77,8 +71,6 @@ function FlipCard({ name, role, photo, linkedin = "", github = "", quote = "" }:
     </div>
   )
 }
-
-// little pill heading, reused for Executive Committee / Core Committee
 function SectionHeading({ title }: { title: string }) {
   return (
     <div className="section-heading">
@@ -86,7 +78,6 @@ function SectionHeading({ title }: { title: string }) {
     </div>
   )
 }
-
 export default function TeamPage() {
   const facultyCoordinator: Member = {
     name: "Dr. Rashi Nathawat",
@@ -94,7 +85,6 @@ export default function TeamPage() {
     photo: "/team/rashi-nathawat.jpeg",
     linkedin: "https://www.linkedin.com/in/rashi-nathawat-phd-54a31663",
   }
-
   const executiveCommittee: Member[] = [
     { name: "Saksham Agrawal", role: "President", photo: "/team/Saksham.png", linkedin: "https://www.linkedin.com/in/saksham-agrawal-8b472836a", quote:"Hi, I'm Saksham. Just trying to learn, grow, and enjoy the journey." },
     { name: "Aniqa Aziz", role: "Vice President", photo: "/team/Aniqa.jpeg", linkedin: "https://www.linkedin.com/in/aniqa-aziz-4b964032b", quote:"The stars remind me there's always another zenith to reach" },
@@ -119,26 +109,23 @@ export default function TeamPage() {
     { name: "Adarsh Raj", role: "Head of Operations", photo: "/team/adarsh.jpeg", linkedin: "https://www.linkedin.com/in/adarsh-raj-a406a7366" },
     { name: "Anubhav Das Sharma", role: "Head of Content", photo: "/team/anubhav.jpg", linkedin: "https://www.linkedin.com/in/anubhav-das-sharma-739135294", quote: "Making ideas take flight" },
     { name: "Shivam Kumar", role: "Head of Content", photo: "/team/Shivam.png", linkedin: "https://www.linkedin.com/in/shivam-kumar-5b1965338", quote: "Your presence of mind solves half your problems" },
-    { name: "Divy", role: "Head of Content" },
+    { name: "Divy Srivastava", role: "Head of Content", photo: "/team/Divy.jpg", linkedin:"https://www.linkedin.com/in/divy-srivastava-954236277", quote:"Vivendo discimus - By living we learn" },
     { name: "Pranay Gupta", role: "Head of Promotions", photo: "/team/Pranay.jpg", linkedin: "https://www.linkedin.com/in/pranay-gupta-b2a7b02a7", quote: "The Cosmos is limitless, and so is our potential" },
     { name: "Akshat Malik", role: "Head of Promotions", photo: "/team/Akshat.jpg", linkedin: "https://www.linkedin.com/in/akshat-malik-938229397", quote: "Not the Last time you're gonna hear my name 😎" },
     { name: "Tanushi Goyal", role: "Head of Promotions", photo: "/team/Tanushi.jpeg", linkedin: "https://www.linkedin.com/in/tanushi-goyal-3b6774373", quote: "Driven by curiosity, stardust and kindness." },
     { name: "Devanshu Yadav", role: "Head of Graphic Design", photo: "/team/Devanshu.jpg", linkedin: "https://www.linkedin.com/in/devanshu-yadav-a1592b367", github: "https://github.com/devanshu1907", quote: "https://github.com/devanshu1907" },
     { name: "Abhilasha Bhandari", role: "Head of Graphic Design", photo: "/team/Abhilasha.jpg", linkedin: "https://www.linkedin.com/in/abhilasha-bhandari-005475377", quote: "Currently buffering between circuits and constellations. ECE student and graphic designer, driven by curiosity, creativity, and an impressive collection of browser tabs😭✨️" },
-    { name: "Manya", role: "Head of Graphic Design" },
+    { name: "Maanya Soni", role: "Head of Graphic Design", photo: "/team/Maanya.png", linkedin:"https://www.linkedin.com/in/maanya-soni-b06981227", quote:"the vivid uncertainty of a lie, submission of the moth to the flames or its final journey locating the moon", github:"https://github.com/uf-methism"},
     { name: "Namit Agarwal", role: "Head of Media & Coverage", photo: "/team/Namit.png", linkedin: "https://www.linkedin.com/in/namit-agarwal-b7b504396", github: "https://github.com/namit747", quote: "Turning Potential into Proof" },
-    { name: "Aarav", role: "Head of Media & Coverage" },
-    { name: "Snehil", role: "Head of Media & Coverage" },
-    { name: "Neha", role: "Head of Social Media" },
+    { name: "Aarav Ajit", role: "Head of Media & Coverage", photo: "/team/aarav.jpeg",quote:"The important thing isn't can you read music, it's can you hear it. Can you hear the music, Robert?" },
+    { name: "Snehil Singh", role: "Head of Media & Coverage", photo: "/team/Snehil.jpeg", linkedin:"https://www.linkedin.com/in/snehil-singh-8b14a3212", quote:"Somewhere between stardust and chaos✨" },
+    { name: "Neha Jakhar ", role: "Head of Social Media", photo: "/team/nehaJ.jpeg", linkedin: "https://www.linkedin.com/in/neha-jakhar-690739372", quote: "Hello there! I am Neha Jakhar your Social media Head. I am someone who loves trying new things but when they don’t work out i regret them😭", github:"https://github.com/nehajakharrr" },
     { name: "Pranjal Raj", role: "Head of Corporate Affairs", photo: "/team/pranjal.jpg", linkedin: "https://www.linkedin.com/in/pranjalrajverma?", quote: "A supernova begins with a star collapsing" },
-    { name: "Samarth", role: "Head of Corporate Affairs" },
     { name: "Mahika", role: "Head of Art & Crafts", photo: "/team/Mahika.jpg", quote: "A restless imagination finding poetry in everything." },
     { name: "Palak Goyal", role: "Head of Art & Crafts", photo: "/team/palak.jpg", quote: "Finding stories in books, inspiration in the stars, and creativity in between. ✨📚🌌" },
-    { name: "Navinya", role: "Head of Art & Crafts" },
-    { name: "Kratika", role: "Head of Art & Crafts" },
+    { name: "Kratika Saraswat", role: "Head of Art & Crafts", photo: "/team/Kratika.jpg", linkedin:"https://www.linkedin.com/in/kratika-saraswat-2387933b1", quote:"Hello everyone, I’m Kratika Saraswat. I’m a 2nd-year CSE student. My biggest strength is that I can adjust myself to different situations and environments. In my free time, I like watching anime. One quote I really like is, “Follow none, but learn from everyone,” because I believe we can learn something from every person we meet." },
     { name: "Diya", role: "Head of Art & Crafts" },
   ]
-
   return (
     <>
       <style>{`
@@ -151,19 +138,6 @@ export default function TeamPage() {
           min-height: 100%;
           background: #0A1628;
           font-family: 'Inter', sans-serif;
-        }
-
-        /* Top gradient backdrop to prevent content bleeding above fixed header when scrolling */
-        body::before {
-          content: '';
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 95px;
-          background: linear-gradient(180deg, #0A1628 0%, rgba(10, 22, 40, 0.85) 65%, transparent 100%);
-          z-index: 9;
-          pointer-events: none;
         }
 
         /* background spline scene, sits behind everything */
@@ -416,17 +390,14 @@ export default function TeamPage() {
 
         .logo {
           position: fixed;
-          top: 10px;
-          left: 20px;
+          top: -80px;
+          left: -20px;
           z-index: 20;
-          display: flex;
-          align-items: center;
           text-decoration: none;
         }
         .logo img {
-          height: 64px;
+          height: 270px;
           width: auto;
-          object-fit: contain;
         }
         nav {
           display: flex;
@@ -475,68 +446,6 @@ export default function TeamPage() {
         .join-btn:hover {
           transform: translateY(-1px);
           box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-        }
-
-        @media (max-width: 768px) {
-          .logo {
-            top: 10px;
-            left: 12px;
-          }
-          .logo img {
-            height: 52px;
-            width: auto;
-          }
-
-          header {
-            top: 10px;
-            right: 12px;
-            left: auto;
-            transform: none;
-            width: auto;
-            max-width: calc(100% - 76px);
-            height: 52px;
-            padding: 2px 8px;
-            border-radius: 50px;
-          }
-
-          nav {
-            overflow-x: auto;
-            max-width: 100%;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-          }
-          nav::-webkit-scrollbar {
-            display: none;
-          }
-
-          nav a {
-            font-size: 9px;
-            padding: 5px 9px;
-          }
-
-          .join-btn {
-            font-size: 8.5px;
-            padding: 6px 10px;
-            margin-left: 4px;
-          }
-
-          .page {
-            padding: 90px 16px 60px;
-          }
-
-          .page-title h1 {
-            font-size: 28px;
-          }
-
-          .section-heading-label {
-            font-size: 16px;
-            padding: 10px 24px;
-          }
-
-          .flip-card {
-            width: 100%;
-            max-width: 280px;
-          }
         }
       `}</style>
 
