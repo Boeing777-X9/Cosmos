@@ -52,11 +52,18 @@ export default function Blog() {
 
         .logo {
           position: fixed;
-          top: -80px; left: -20px;
+          top: 10px;
+          left: 20px;
           z-index: 20;
+          display: flex;
+          align-items: center;
           text-decoration: none;
         }
-        .logo img { height: 270px; width: auto; }
+        .logo img {
+          height: 64px;
+          width: auto;
+          object-fit: contain;
+        }
 
         nav {
           display: flex;
@@ -106,6 +113,62 @@ export default function Blog() {
         .join-btn:hover {
           transform: translateY(-1px);
           box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+          .logo {
+            top: 10px;
+            left: 12px;
+          }
+          .logo img {
+            height: 52px;
+            width: auto;
+          }
+
+          header {
+            top: 10px;
+            right: 12px;
+            left: auto;
+            transform: none;
+            width: auto;
+            max-width: calc(100% - 76px);
+            height: 52px;
+            padding: 2px 8px;
+            border-radius: 50px;
+          }
+
+          nav {
+            overflow-x: auto;
+            max-width: 100%;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          }
+          nav::-webkit-scrollbar {
+            display: none;
+          }
+
+          nav a {
+            font-size: 9px;
+            padding: 5px 9px;
+          }
+
+          .join-btn {
+            font-size: 8.5px;
+            padding: 6px 10px;
+            margin-left: 4px;
+          }
+
+          .content {
+            padding: 90px 16px 60px;
+          }
+
+          .page-title {
+            font-size: 28px;
+          }
+
+          .blog-container {
+            padding: 24px 18px !important;
+          }
         }
 
         .content {

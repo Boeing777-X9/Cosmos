@@ -60,14 +60,14 @@ export default function Home() {
           top: 16px;
           left: 50%;
           transform: translateX(-50%);
-          width: calc(100% - 64px);
-          max-width: 1100px;
+          width: calc(100% - 48px);
+          max-width: 1200px;
           z-index: 10;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 2px 16px;
-          height: 70px;
+          padding: 6px 20px;
+          height: 64px;
           border-radius: 24px;
           border: 1px solid rgba(255,255,255,0.15);
           background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.06) 50%, rgba(120,180,255,0.1));
@@ -78,17 +78,24 @@ export default function Home() {
 
         .logo {
           position: fixed;
-          top: -80px; left: -20px;
+          top: 10px;
+          left: 20px;
           z-index: 20;
+          display: flex;
+          align-items: center;
           text-decoration: none;
         }
-        .logo img { height: 270px; width: auto; }
+        .logo img {
+          height: 64px;
+          width: auto;
+          object-fit: contain;
+        }
 
         nav {
           display: flex;
           align-items: center;
-          gap: 2px;
-          padding: 4px 6px;
+          gap: 4px;
+          padding: 4px 8px;
           border-radius: 50px;
           border: 1px solid rgba(255,255,255,0.12);
           background: rgba(255,255,255,0.07);
@@ -96,36 +103,36 @@ export default function Home() {
         }
         nav a {
           font-family: 'Orbitron', sans-serif;
-          font-size: 10px;
-          font-weight: 400;
+          font-size: 11px;
+          font-weight: 500;
           letter-spacing: 0.1em;
-          color: rgba(255, 255, 255, 0.6);
+          color: rgba(255, 255, 255, 0.7);
           text-decoration: none;
-          padding: 7px 15px;
+          padding: 8px 16px;
           border-radius: 50px;
           transition: all 0.25s ease;
           white-space: nowrap;
         }
         nav a:hover {
           color: white;
-          background: rgba(255, 255, 255, 0.12);
+          background: rgba(255, 255, 255, 0.15);
         }
         nav a.active {
           color: white;
-          background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.08));
+          background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
 
         .join-btn {
           font-family: 'Orbitron', sans-serif;
-          font-size: 10px;
+          font-size: 10.5px;
           font-weight: 700;
           letter-spacing: 0.12em;
           color: #0A1628;
           background: linear-gradient(135deg, #ffffff, #c8dcff);
           border: none;
           border-radius: 50px;
-          padding: 10px 20px;
+          padding: 10px 22px;
           cursor: pointer;
           text-decoration: none;
           white-space: nowrap;
@@ -135,6 +142,53 @@ export default function Home() {
         .join-btn:hover {
           transform: translateY(-1px);
           box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+          .logo {
+            top: 10px;
+            left: 8px;
+          }
+          .logo img {
+            height: 46px;
+            width: auto;
+          }
+
+          header {
+            top: 10px;
+            right: 8px;
+            left: auto;
+            transform: none;
+            width: auto;
+            max-width: calc(100% - 62px);
+            height: 46px;
+            padding: 2px 6px;
+            border-radius: 50px;
+          }
+
+          nav {
+            display: flex;
+            align-items: center;
+            gap: 1px;
+            overflow-x: auto;
+            max-width: calc(100% - 92px);
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          }
+          nav::-webkit-scrollbar {
+            display: none;
+          }
+
+          nav a {
+            font-size: 8.5px;
+            padding: 4px 7px;
+          }
+
+          .join-btn {
+            font-size: 8px;
+            padding: 5px 9px;
+            margin-left: 2px;
+          }
         }
       `}</style>
 
