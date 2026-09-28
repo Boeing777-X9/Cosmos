@@ -41,7 +41,7 @@ const allPastEvents: EventItem[] = [
     date: '18 August 2026',
     time: '6:30 PM Onwards',
     venue: 'Manipal University Jaipur',
-    poster: '/events/project-hail-mary.jpg',
+    poster: '/events/project-hail-mary.jpeg',
     desc: 'Grand finale film screening of Project Hail Mary, concluding COSMOS Week with popcorn and sci-fi cinema under the stars.',
     tag: 'SCREENING',
   },
@@ -51,7 +51,7 @@ const allPastEvents: EventItem[] = [
     date: '17 August 2026',
     time: '6:30 PM – 10:00 PM',
     venue: 'MUJ Classroom',
-    poster: '/events/lunar-lies.jpg',
+    poster: '/events/lunar-lies.jpeg',
     desc: 'Intense debate competition debunking cosmic conspiracy theories and testing scientific logic against reality.',
     tag: 'COMPETITION',
   },
@@ -61,7 +61,7 @@ const allPastEvents: EventItem[] = [
     date: '16 August 2026',
     time: '10:00 AM Onwards',
     venue: 'MUJ Classroom',
-    poster: '/events/habitat-2050.jpg',
+    poster: '/events/habitat-2050.jpeg',
     desc: 'Ideathon tackling medical breakthroughs and logistical healthcare frontiers for deep-space missions.',
     tag: 'COMPETITION',
   },
@@ -71,7 +71,7 @@ const allPastEvents: EventItem[] = [
     date: '14 August 2026',
     time: '6:00 PM – 11:00 PM',
     venue: 'Old Amphitheater',
-    poster: '/events/whispers-of-the-universe.jpg',
+    poster: '/events/whispers-of-the-universe.jpeg',
     desc: 'Stargazing telescopes, constellation setups, and astronomy mini-games under the clear night sky.',
     tag: 'STARGAZING',
   },
@@ -81,7 +81,7 @@ const allPastEvents: EventItem[] = [
     date: '13 August 2026',
     time: '6:20 PM Onwards',
     venue: 'Classroom, MUJ',
-    poster: '/events/wear-the-universe.jpg',
+    poster: '/events/wear-the-universe.jpeg',
     desc: 'Creative merchandise design challenge bringing cosmic artwork into wearable apparel.',
     tag: 'COMPETITION',
   },
@@ -91,7 +91,7 @@ const allPastEvents: EventItem[] = [
     date: '12 August 2026',
     time: '5:30 PM Onwards',
     venue: 'Old Amphitheatre',
-    poster: '/events/cosmic-capture.jpg',
+    poster: '/events/cosmic-capture.jpeg',
     desc: 'Astrophotography and light painting workshop capturing long-exposure star trails and night sky scenes.',
     tag: 'STARGAZING',
   },
@@ -101,7 +101,7 @@ const allPastEvents: EventItem[] = [
     date: '12 March 2026',
     time: '10:00 AM Onwards',
     venue: 'Smt. Vasantipai Auditorium',
-    poster: '/events/physics-unplugged.jpg',
+    poster: '/events/physics-unplugged.jpeg',
     desc: 'Keynote address, live experiments, and interactive Q&A session with Padma Shri Prof. H. C. Verma.',
     tag: 'KEYNOTE',
   },
@@ -111,7 +111,7 @@ const allPastEvents: EventItem[] = [
     date: '01 February 2026',
     time: '6:00 PM – 11:00 PM',
     venue: 'Old Amphitheater',
-    poster: '/events/whispers-of-the-universe-2.jpg',
+    poster: '/events/whispers-of-the-universe-2.jpeg',
     desc: 'Hands-on telescope observations, gaming stalls, interactive setups, and acoustic jamming.',
     tag: 'STARGAZING',
   },
@@ -141,7 +141,7 @@ const allPastEvents: EventItem[] = [
     date: '11 October 2025',
     time: '11:00 AM – 5:00 PM',
     venue: 'Old Mess, MUJ Campus',
-    poster: '/events/teslas-lost-inventions.jpg',
+    poster: '/events/teslas-lost-inventions.jpeg',
     desc: 'Solve electromagnetic riddles and uncover Nikola Tesla’s forgotten masterworks across campus.',
     tag: 'COMPETITION',
   },
@@ -151,7 +151,7 @@ const allPastEvents: EventItem[] = [
     date: '20 July 2025',
     time: 'Full Day Event',
     venue: 'Online (Unstop)',
-    poster: '/events/nebula-nexus.jpg',
+    poster: '/events/nebula-nexus.jpeg',
     desc: 'Pan-India frontend web hackathon designing interstellar user interfaces and space apps.',
     tag: 'COMPETITION',
   },
@@ -161,7 +161,7 @@ const allPastEvents: EventItem[] = [
     date: '18–19 April 2025',
     time: 'Online / Presentation',
     venue: 'MUJ Campus & Virtual',
-    poster: '/events/innovaite.jpg',
+    poster: '/events/innovaite.jpeg',
     desc: 'National presentation and pitching ideathon driving sustainable innovations and artificial intelligence.',
     tag: 'COMPETITION',
   },
@@ -171,7 +171,7 @@ const allPastEvents: EventItem[] = [
     date: '05 April 2025',
     time: '6:30 PM Onwards',
     venue: 'Old Amphitheatre',
-    poster: '/events/nebula-nights.jpg',
+    poster: '/events/nebula-nights.jpeg',
     desc: 'An open-air evening blending gaming setups, interactive science stalls, telescope viewings, and acoustic music.',
     tag: 'STARGAZING',
   },
@@ -182,7 +182,7 @@ const allPastEvents: EventItem[] = [
     date: '21–22 February 2025',
     time: 'Starts 10:00 AM',
     venue: 'Vasanti Pai Audi',
-    poster: '/events/cosmozone-hackathon.jpg',
+    poster: '/events/cosmozone-hackathon.jpeg',
     desc: 'Interstellar tech hackathon with a ₹1 Lakh prize pool and exclusive internship offers.',
     tag: 'COMPETITION',
   },
@@ -192,7 +192,7 @@ const allPastEvents: EventItem[] = [
     date: '20 February 2025',
     time: '6:00 PM – 10:00 PM',
     venue: 'Old Amphitheater',
-    poster: '/events/celestial-serenade.jpg',
+    poster: '/events/celestial-serenade.jpeg',
     desc: 'A fusion of astrophysics discussions and live sky observing with the Department of Physics.',
     tag: 'STARGAZING',
   },
@@ -203,7 +203,7 @@ const allPastEvents: EventItem[] = [
     date: '25 January 2025',
     time: '6:00 PM – 10:00 PM',
     venue: 'Old Amphitheatre',
-    poster: '/events/grah-sanrekhan.jpg',
+    poster: '/events/grah-sanrekhan.jpeg',
     desc: 'Planetary observation session organized on the eve of Republic Day with the Department of Physics.',
     tag: 'STARGAZING',
   },
@@ -213,7 +213,7 @@ const allPastEvents: EventItem[] = [
     date: '30 November 2024',
     time: '10:00 AM',
     venue: 'Old Mess',
-    poster: '/events/quigencia-8.jpg',
+    poster: '/events/quigencia-8.jpeg',
     desc: 'Post-apocalyptic fallout treasure hunt across campus with a ₹10,000 prize pool.',
     tag: 'COMPETITION',
   },
@@ -287,6 +287,19 @@ export default function Events() {
           color: #e2e8f0;
         }
 
+        /* Top gradient backdrop to prevent content bleeding above fixed header when scrolling */
+        body::before {
+          content: '';
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 95px;
+          background: linear-gradient(180deg, #060d19 0%, rgba(6, 13, 25, 0.85) 65%, transparent 100%);
+          z-index: 9;
+          pointer-events: none;
+        }
+
         .spline-container {
           position: fixed;
           top: 0; left: 0;
@@ -323,11 +336,18 @@ export default function Events() {
 
         .logo {
           position: fixed;
-          top: -80px; left: -20px;
+          top: 10px;
+          left: 20px;
           z-index: 20;
+          display: flex;
+          align-items: center;
           text-decoration: none;
         }
-        .logo img { height: 270px; width: auto; }
+        .logo img {
+          height: 64px;
+          width: auto;
+          object-fit: contain;
+        }
 
         nav {
           display: flex;
@@ -782,11 +802,64 @@ export default function Events() {
           .events-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
-        @media (max-width: 680px) {
-          .content { padding: 110px 20px 60px; }
-          .events-grid { grid-template-columns: 1fr; }
-          .page-title { font-size: 32px; }
-          .modal-meta-grid { grid-template-columns: 1fr; }
+        @media (max-width: 768px) {
+          .logo {
+            top: 10px;
+            left: 12px;
+          }
+          .logo img {
+            height: 52px;
+            width: auto;
+          }
+
+          header {
+            top: 10px;
+            right: 12px;
+            left: auto;
+            transform: none;
+            width: auto;
+            max-width: calc(100% - 76px);
+            height: 52px;
+            padding: 2px 8px;
+            border-radius: 50px;
+          }
+
+          nav {
+            overflow-x: auto;
+            max-width: 100%;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          }
+          nav::-webkit-scrollbar {
+            display: none;
+          }
+
+          nav a {
+            font-size: 9px;
+            padding: 5px 9px;
+          }
+
+          .join-btn {
+            font-size: 8.5px;
+            padding: 6px 10px;
+            margin-left: 4px;
+          }
+
+          .content {
+            padding: 90px 16px 60px;
+          }
+          .events-grid {
+            grid-template-columns: 1fr;
+          }
+          .page-title {
+            font-size: 28px;
+          }
+          .modal-card {
+            padding: 20px;
+          }
+          .modal-meta-grid {
+            grid-template-columns: 1fr;
+          }
         }
       `}</style>
 

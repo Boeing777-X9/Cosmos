@@ -17,7 +17,7 @@ const GitHubIcon = () => (
 type Member = {
   name: string
   role?: string
-  photo: string
+  photo?: string
   linkedin?: string
   github?: string
   quote?: string
@@ -96,47 +96,47 @@ export default function TeamPage() {
   }
 
   const executiveCommittee: Member[] = [
-    { name: "Saksham Agrawal", role: "President", photo: "/team/saksham.png", linkedin: "https://www.linkedin.com/in/saksham-agrawal-8b472836a", quote:"Hi, I'm Saksham. Just trying to learn, grow, and enjoy the journey." },
-    { name: "Aniqa Aziz", role: "Vice President", photo: "/team/aniqa.jpeg", linkedin: "https://www.linkedin.com/in/aniqa-aziz-4b964032b", quote:"The stars remind me there's always another zenith to reach" },
-    { name: "Ojasvi Gautam", role: "General Secretary", photo: "/team/ojasvi.jpg", linkedin: "https://www.linkedin.com/in/ojasvi-gautam-789760344", quote:" 'For my part I know nothing with any certainty, but the sight of stars make me dream' ~ Vincent Van Gogh " },
-    { name: "Daivik Garg", role: "Treasurer", photo: "/team/daivik.jpeg", linkedin: "https://www.linkedin.com/in/daivik-garg-90163a350", quote:"Managing your finances is not a luxuary for the rich,it is hygiene for everyone" },
+    { name: "Saksham Agrawal", role: "President", photo: "/team/Saksham.png", linkedin: "https://www.linkedin.com/in/saksham-agrawal-8b472836a", quote:"Hi, I'm Saksham. Just trying to learn, grow, and enjoy the journey." },
+    { name: "Aniqa Aziz", role: "Vice President", photo: "/team/Aniqa.jpeg", linkedin: "https://www.linkedin.com/in/aniqa-aziz-4b964032b", quote:"The stars remind me there's always another zenith to reach" },
+    { name: "Ojasvi Gautam", role: "General Secretary", photo: "/team/Ojasvi.jpg", linkedin: "https://www.linkedin.com/in/ojasvi-gautam-789760344", quote:" 'For my part I know nothing with any certainty, but the sight of stars make me dream' ~ Vincent Van Gogh " },
+    { name: "Daivik Garg", role: "Treasurer", photo: "/team/Daivik.jpeg", linkedin: "https://www.linkedin.com/in/daivik-garg-90163a350", quote:"Managing your finances is not a luxuary for the rich,it is hygiene for everyone" },
     { name: "Saransh Verma", role: "Technical Secretary", photo: "/team/saransh.jpg", linkedin: "https://www.linkedin.com/in/saransh-verma-22b1ba179", github: "https://github.com/Saransh78", quote:"Not chasing perfection—just making the next move better." },
-    { name: "Shriya Desai", role: "Managing Director", photo: "/team/shriya.jpg", linkedin: "https://www.linkedin.com/in/shriya-desai-9a3b74361", github:"https://github.com/astro-quanta", quote:"Always Reaching. Already Enough."},
-    { name: "Vasavadatta Vishen", role: "Director of Operations", photo: "/team/vasavadatta.jpg", linkedin: "https://www.linkedin.com/in/vasavadatta-vishen-620b60321", quote:"Music gives a soul to the universe , wings to the mind , flight to the imagination, and life to everything "
+    { name: "Shriya Desai", role: "Managing Director", photo: "/team/Shriya.jpg", linkedin: "https://www.linkedin.com/in/shriya-desai-9a3b74361", github:"https://github.com/astro-quanta", quote:"Always Reaching. Already Enough."},
+    { name: "Vasavadatta Vishen", role: "Director of Operations", photo: "/team/Vasavadatta.jpg", linkedin: "https://www.linkedin.com/in/vasavadatta-vishen-620b60321", quote:"Music gives a soul to the universe , wings to the mind , flight to the imagination, and life to everything "
      },
-    { name: "Gurbani", role: "Creative Director", photo: "/team/gurbani.jpg", linkedin: "https://www.linkedin.com/in/gurbani-47ba87340", quote:"No one can take away the constellations that exist within you"},
-    { name: "Aarna Gupta", role: "Director of External Affairs", photo: "/team/aarna.JPEG", linkedin: "https://www.linkedin.com/in/aarna-gupta-3294aa368", quote:"Curious by nature, always eager to learn something new, connect with people, and be part of meaningful initiatives." },
+    { name: "Gurbani", role: "Creative Director", photo: "/team/Gurbani.jpg", linkedin: "https://www.linkedin.com/in/gurbani-47ba87340", quote:"No one can take away the constellations that exist within you"},
+    { name: "Aarna Gupta", role: "Director of External Affairs", photo: "/team/aarna.jpeg", linkedin: "https://www.linkedin.com/in/aarna-gupta-3294aa368", quote:"Curious by nature, always eager to learn something new, connect with people, and be part of meaningful initiatives." },
   ]
   const coreMembers: Member[] = [
     { name: "Prakhar Upadhyay", role: "Head of Technical Projects", photo: "/team/prakhar.jpeg", github: "https://github.com/FT-snow", quote: "chimichangas" },
     { name: "Mohammed Faisal", role: "Head of Technical Projects", photo: "/team/faisal.jpeg", linkedin: "https://www.linkedin.com/in/mohammed-faisal-833a81375", github: "https://github.com/Boeing777-X9", quote: "One day, I'll fly the Boeing 777-9 ✈️. Until then, I'll keep building things that move the world forward 💻🚀." },
-    { name: "Ojash Bhatnagar", role: "Head of Events", photo: "/team/ojash.jpg", linkedin: "https://in.linkedin.com/in/ojash-bhatnagar-35b37a380", quote: "Somewhere between Earth and Delusion" },
-    { name: "Shailey Singh", role: "Head of Events", photo: "/team/shailey.jpg", quote: "to live for the hope of it all" },
-    { name: "Aayan Kundu", role: "Head of Logistics", photo: "/team/aayan.jpg", linkedin: "https://www.linkedin.com/in/aayan-kundu-734008371", github: "https://github.com/AayanKundu1303", quote: "I am Aayan Kundu (2nd Year B.Tech). Head of Logistics " },
-    { name: "Abhisri Mishra", role: "Head of Logistics", photo: "/team/abhisri.jpg", linkedin: "https://www.linkedin.com/in/abhisri-mishra-86b2503a4", quote: "Even the darkest sky is just a canvas for the next sunrise. " },
-    { name: "Manas", role: "Head of Logistics", photo: "/team/manas.jpg" },
-    { name: "Kyna Gupta", role: "Head of Operations", photo: "/team/kyna.jpeg", linkedin: "https://www.linkedin.com/in/kyna-gupta-119321399", quote: "Like gravity holds galaxies together, she keeps every mission aligned." },
+    { name: "Ojash Bhatnagar", role: "Head of Events", photo: "/team/Ojash.jpg", linkedin: "https://in.linkedin.com/in/ojash-bhatnagar-35b37a380", quote: "Somewhere between Earth and Delusion" },
+    { name: "Shailey Singh", role: "Head of Events", photo: "/team/Shailey.jpg", quote: "to live for the hope of it all" },
+    { name: "Aayan Kundu", role: "Head of Logistics", photo: "/team/Aayan.jpg", linkedin: "https://www.linkedin.com/in/aayan-kundu-734008371", github: "https://github.com/AayanKundu1303", quote: "I am Aayan Kundu (2nd Year B.Tech). Head of Logistics " },
+    { name: "Abhisri Mishra", role: "Head of Logistics", photo: "/team/Abhisri.jpg", linkedin: "https://www.linkedin.com/in/abhisri-mishra-86b2503a4", quote: "Even the darkest sky is just a canvas for the next sunrise. " },
+    { name: "Manas", role: "Head of Logistics" },
+    { name: "Kyna Gupta", role: "Head of Operations", photo: "/team/Kyna.jpeg", linkedin: "https://www.linkedin.com/in/kyna-gupta-119321399", quote: "Like gravity holds galaxies together, she keeps every mission aligned." },
     { name: "Adarsh Raj", role: "Head of Operations", photo: "/team/adarsh.jpeg", linkedin: "https://www.linkedin.com/in/adarsh-raj-a406a7366" },
     { name: "Anubhav Das Sharma", role: "Head of Content", photo: "/team/anubhav.jpg", linkedin: "https://www.linkedin.com/in/anubhav-das-sharma-739135294", quote: "Making ideas take flight" },
-    { name: "Shivam Kumar", role: "Head of Content", photo: "/team/shivam.png", linkedin: "https://www.linkedin.com/in/shivam-kumar-5b1965338", quote: "Your presence of mind solves half your problems" },
-    { name: "Divy", role: "Head of Content", photo: "/team/divy.jpg" },
-    { name: "Pranay Gupta", role: "Head of Promotions", photo: "/team/pranay.jpg", linkedin: "https://www.linkedin.com/in/pranay-gupta-b2a7b02a7", quote: "The Cosmos is limitless, and so is our potential" },
-    { name: "Akshat Malik", role: "Head of Promotions", photo: "/team/akshat.jpg", linkedin: "https://www.linkedin.com/in/akshat-malik-938229397", quote: "Not the Last time you're gonna hear my name 😎" },
-    { name: "Tanushi Goyal", role: "Head of Promotions", photo: "/team/tanushi.jpeg", linkedin: "https://www.linkedin.com/in/tanushi-goyal-3b6774373", quote: "Driven by curiosity, stardust and kindness." },
-    { name: "Devanshu Yadav", role: "Head of Graphic Design", photo: "/team/devanshu.jpg", linkedin: "https://www.linkedin.com/in/devanshu-yadav-a1592b367", github: "https://github.com/devanshu1907", quote: "https://github.com/devanshu1907" },
-    { name: "Abhilasha Bhandari", role: "Head of Graphic Design", photo: "/team/abhilasha.jpg", linkedin: "https://www.linkedin.com/in/abhilasha-bhandari-005475377", quote: "Currently buffering between circuits and constellations. ECE student and graphic designer, driven by curiosity, creativity, and an impressive collection of browser tabs😭✨️" },
-    { name: "Manya", role: "Head of Graphic Design", photo: "/team/manya.jpg" },
-    { name: "Namit Agarwal", role: "Head of Media & Coverage", photo: "/team/namit.png", linkedin: "https://www.linkedin.com/in/namit-agarwal-b7b504396", github: "https://github.com/namit747", quote: "Turning Potential into Proof" },
-    { name: "Aarav", role: "Head of Media & Coverage", photo: "/team/aarav.jpg" },
-    { name: "Snehil", role: "Head of Media & Coverage", photo: "/team/snehil.jpg" },
-    { name: "Neha", role: "Head of Social Media", photo: "/team/neha.jpg" },
+    { name: "Shivam Kumar", role: "Head of Content", photo: "/team/Shivam.png", linkedin: "https://www.linkedin.com/in/shivam-kumar-5b1965338", quote: "Your presence of mind solves half your problems" },
+    { name: "Divy", role: "Head of Content" },
+    { name: "Pranay Gupta", role: "Head of Promotions", photo: "/team/Pranay.jpg", linkedin: "https://www.linkedin.com/in/pranay-gupta-b2a7b02a7", quote: "The Cosmos is limitless, and so is our potential" },
+    { name: "Akshat Malik", role: "Head of Promotions", photo: "/team/Akshat.jpg", linkedin: "https://www.linkedin.com/in/akshat-malik-938229397", quote: "Not the Last time you're gonna hear my name 😎" },
+    { name: "Tanushi Goyal", role: "Head of Promotions", photo: "/team/Tanushi.jpeg", linkedin: "https://www.linkedin.com/in/tanushi-goyal-3b6774373", quote: "Driven by curiosity, stardust and kindness." },
+    { name: "Devanshu Yadav", role: "Head of Graphic Design", photo: "/team/Devanshu.jpg", linkedin: "https://www.linkedin.com/in/devanshu-yadav-a1592b367", github: "https://github.com/devanshu1907", quote: "https://github.com/devanshu1907" },
+    { name: "Abhilasha Bhandari", role: "Head of Graphic Design", photo: "/team/Abhilasha.jpg", linkedin: "https://www.linkedin.com/in/abhilasha-bhandari-005475377", quote: "Currently buffering between circuits and constellations. ECE student and graphic designer, driven by curiosity, creativity, and an impressive collection of browser tabs😭✨️" },
+    { name: "Manya", role: "Head of Graphic Design" },
+    { name: "Namit Agarwal", role: "Head of Media & Coverage", photo: "/team/Namit.png", linkedin: "https://www.linkedin.com/in/namit-agarwal-b7b504396", github: "https://github.com/namit747", quote: "Turning Potential into Proof" },
+    { name: "Aarav", role: "Head of Media & Coverage" },
+    { name: "Snehil", role: "Head of Media & Coverage" },
+    { name: "Neha", role: "Head of Social Media" },
     { name: "Pranjal Raj", role: "Head of Corporate Affairs", photo: "/team/pranjal.jpg", linkedin: "https://www.linkedin.com/in/pranjalrajverma?", quote: "A supernova begins with a star collapsing" },
-    { name: "Samarth", role: "Head of Corporate Affairs", photo: "/team/samarth.jpg" },
-    { name: "Mahika", role: "Head of Art & Crafts", photo: "/team/mahika.jpg", quote: "A restless imagination finding poetry in everything." },
+    { name: "Samarth", role: "Head of Corporate Affairs" },
+    { name: "Mahika", role: "Head of Art & Crafts", photo: "/team/Mahika.jpg", quote: "A restless imagination finding poetry in everything." },
     { name: "Palak Goyal", role: "Head of Art & Crafts", photo: "/team/palak.jpg", quote: "Finding stories in books, inspiration in the stars, and creativity in between. ✨📚🌌" },
-    { name: "Navinya", role: "Head of Art & Crafts", photo: "/team/navinya.jpg" },
-    { name: "Kratika", role: "Head of Art & Crafts", photo: "/team/kratika.jpg" },
-    { name: "Diya", role: "Head of Art & Crafts", photo: "/team/diya.jpg" },
+    { name: "Navinya", role: "Head of Art & Crafts" },
+    { name: "Kratika", role: "Head of Art & Crafts" },
+    { name: "Diya", role: "Head of Art & Crafts" },
   ]
 
   return (
@@ -151,6 +151,19 @@ export default function TeamPage() {
           min-height: 100%;
           background: #0A1628;
           font-family: 'Inter', sans-serif;
+        }
+
+        /* Top gradient backdrop to prevent content bleeding above fixed header when scrolling */
+        body::before {
+          content: '';
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 95px;
+          background: linear-gradient(180deg, #0A1628 0%, rgba(10, 22, 40, 0.85) 65%, transparent 100%);
+          z-index: 9;
+          pointer-events: none;
         }
 
         /* background spline scene, sits behind everything */
@@ -403,14 +416,17 @@ export default function TeamPage() {
 
         .logo {
           position: fixed;
-          top: -80px;
-          left: -20px;
+          top: 10px;
+          left: 20px;
           z-index: 20;
+          display: flex;
+          align-items: center;
           text-decoration: none;
         }
         .logo img {
-          height: 270px;
+          height: 64px;
           width: auto;
+          object-fit: contain;
         }
         nav {
           display: flex;
@@ -459,6 +475,68 @@ export default function TeamPage() {
         .join-btn:hover {
           transform: translateY(-1px);
           box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+          .logo {
+            top: 10px;
+            left: 12px;
+          }
+          .logo img {
+            height: 52px;
+            width: auto;
+          }
+
+          header {
+            top: 10px;
+            right: 12px;
+            left: auto;
+            transform: none;
+            width: auto;
+            max-width: calc(100% - 76px);
+            height: 52px;
+            padding: 2px 8px;
+            border-radius: 50px;
+          }
+
+          nav {
+            overflow-x: auto;
+            max-width: 100%;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          }
+          nav::-webkit-scrollbar {
+            display: none;
+          }
+
+          nav a {
+            font-size: 9px;
+            padding: 5px 9px;
+          }
+
+          .join-btn {
+            font-size: 8.5px;
+            padding: 6px 10px;
+            margin-left: 4px;
+          }
+
+          .page {
+            padding: 90px 16px 60px;
+          }
+
+          .page-title h1 {
+            font-size: 28px;
+          }
+
+          .section-heading-label {
+            font-size: 16px;
+            padding: 10px 24px;
+          }
+
+          .flip-card {
+            width: 100%;
+            max-width: 280px;
+          }
         }
       `}</style>
 

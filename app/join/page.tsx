@@ -274,24 +274,41 @@ export default function MembershipPage() {
           color: #fff;
         }
 
+        @media (max-width: 768px) {
+          .logo {
+            top: 10px;
+            left: 12px;
+          }
+          .logo img {
+            height: 52px;
+            width: auto;
+          }
+          .page-overlay {
+            padding: 80px 16px 40px;
+          }
+        }
+
         @media (max-width: 520px) {
           .field-grid {
             grid-template-columns: 1fr;
           }
           .glass-card {
-            padding: 32px 22px 28px;
+            padding: 28px 18px 24px;
           }
         }
-          .logo {
+        .logo {
           position: fixed;
-          top: -80px;
-          left: -20px;
+          top: 10px;
+          left: 20px;
           z-index: 20;
+          display: flex;
+          align-items: center;
           text-decoration: none;
         }
         .logo img {
-          height: 270px;
+          height: 64px;
           width: auto;
+          object-fit: contain;
         }
       `}</style>
 
